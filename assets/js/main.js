@@ -46,4 +46,4 @@ if (passenger_age < 18) {
 
 // Quarta fase: mostrare output
 // stampo il messaggio in console
-console.log(`${price} ${euro_symbol}`);
+console.log(`${price.toFixed(2)} ${euro_symbol}`);
