@@ -1,9 +1,6 @@
-console.log("Hello world");
-
 // Prima fase: preparazione 
 // Creo la variabile dove salvare il numero di chilometri
 let num_of_km;
-
 
 // Creo la variabile dove salvare l'età del passeggiero
 let passenger_age;
@@ -12,7 +9,7 @@ let passenger_age;
 let price_at_km = 0.21;
 
 // Creo la variabile price dove salvare il prezzo del biglietto
-let price
+let final_price;
 
 // creo la varibiale per il simbolo dell'euro
 let euro_symbol = "€";
@@ -32,18 +29,17 @@ console.log(num_of_km, passenger_age);
 let base_price = num_of_km * price_at_km;
 
 // creo le condizioni di sconto
-if (passenger_age < 18) {
-    // verifico se sono minorenni
-    price = base_price - (0.20 * base_price);
-} else if (passenger_age > 65) {
-    // verifico se sono over 65
-    price = base_price - (0.40 * base_price);
-} else {
-    // altrimenti sono > 18 ma < 65
-    price = base_price;
+if (passenger_age < 18) { // verifico se sono minorenni
+    final_price = base_price - (0.20 * base_price);
+
+} else if (passenger_age > 65) { // verifico se sono over 65
+    final_price = base_price - (0.40 * base_price);
+    
+} else { // altrimenti non sono soggetti a sconto
+    final_price = base_price;
 }
 
 
 // Quarta fase: mostrare output
 // stampo il messaggio in console
-console.log(`${price.toFixed(2)} ${euro_symbol}`);
+console.log(`${final_price.toFixed(2)} ${euro_symbol}`);
