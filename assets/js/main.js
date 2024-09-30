@@ -1,17 +1,21 @@
 console.log("Hello world");
 
 // Prima fase: preparazione 
-// Creo la prima variabile dove salvare il numero di chilometri
+// Creo la variabile dove salvare il numero di chilometri
 let num_of_km;
 
-// Creo la seconda variabile dove salvare l'età del passeggiero
+
+// Creo la variabile dove salvare l'età del passeggiero
 let passenger_age;
 
-// Creo la seconda variabile dove salvare il prezzo al km
+// Creo la variabile dove salvare il prezzo al km
 let price_at_km = 0.21;
 
 // Creo la variabile price dove salvare il prezzo del biglietto
 let price
+
+// creo la varibiale per il simbolo dell'euro
+let euro_symbol = "€";
 
 // Seconda fase: raccogliere dati
 // Utilizzo un prompt per salvare il numero di km
@@ -42,4 +46,4 @@ if (passenger_age < 18) {
 
 // Quarta fase: mostrare output
 // stampo il messaggio in console
-console.log(price);
+console.log(`${price} ${euro_symbol}`);
