@@ -8,7 +8,7 @@ let num_of_km;
 let passenger_age;
 
 // Creo la seconda variabile dove salvare il prezzo al km
-let price_at_km;
+let price_at_km = 0.21;
 
 // Creo la variabile price dove salvare il prezzo del biglietto
 let price;
@@ -25,12 +25,18 @@ passenger_age = prompt("Inserisci la tua età");
 console.log(num_of_km, passenger_age);
 
 // Terza fase: elaborazione codice
-// verifico se la prima parola è più lunga della seconda
-
-// verifico se la seconda parola è più lunga
-
-// altrimenti sono uguali
+if (passenger_age < 18) {
+    // verifico se sono minorenni
+    price = (num_of_km * price_at_km) - (0.20 * (num_of_km * price_at_km));
+} else if (passenger_age > 65) {
+    // verifico se sono over 65
+    price = (num_of_km * price_at_km) - (0.40 * (num_of_km * price_at_km));
+} else {
+    // altrimenti sono > 18 ma < 65
+    price = num_of_km * price_at_km;
+}
 
 
 // Quarta fase: mostrare output
 // stampo il messaggio in console
+console.log(price);
