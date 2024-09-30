@@ -7,17 +7,22 @@ let num_of_km;
 // Creo la seconda variabile dove salvare l'età del passeggiero
 let passenger_age;
 
-// Creo la variabile message dove salvare il messaggio finale
-let message
+// Creo la seconda variabile dove salvare il prezzo al km
+let price_at_km;
+
+// Creo la variabile price dove salvare il prezzo del biglietto
+let price;
 
 
 // Seconda fase: raccogliere dati
-// Utilizzo un prompt per salvare la prima parola
+// Utilizzo un prompt per salvare il numero di km
+num_of_km = prompt("Ciao, inserisci il numero di chilometri");
 
-// Utilizzo un prompt per salvare la seconda parola
+// Utilizzo un prompt per salvare l'età del passeggero
+passenger_age = prompt("Inserisci la tua età");
 
-// stampo le due parole
-
+// stampo i due prompt
+console.log(num_of_km, passenger_age);
 
 // Terza fase: elaborazione codice
 // verifico se la prima parola è più lunga della seconda
