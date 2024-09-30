@@ -14,10 +14,10 @@ let final_price;
 
 // Seconda fase: raccogliere dati
 // Utilizzo un prompt per salvare il numero di km
-num_of_km = prompt("Ciao, inserisci il numero di chilometri");
+num_of_km = Number(prompt("Ciao, inserisci il numero di chilometri"));
 
 // Utilizzo un prompt per salvare l'età del passeggero
-passenger_age = prompt("Inserisci la tua età");
+passenger_age = Number(prompt("Inserisci la tua età"));
 
 // stampo i due prompt
 console.log(num_of_km, passenger_age);
@@ -41,4 +41,4 @@ if (passenger_age < 18) { // verifico se sono minorenni
 
 // Quarta fase: mostrare output
 // stampo il messaggio in console
-console.log(`${final_price.toFixed(2)} "€"`);
+console.log(`${final_price.toFixed(2)} €`);
